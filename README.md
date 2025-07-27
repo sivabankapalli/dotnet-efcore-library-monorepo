@@ -29,6 +29,22 @@ A monorepo solution for .NET microservices using a shared EF Core library, suppo
 - Migrations managed via the shared library with context factory.
 - Idempotency supported out-of-the-box via `IdempotentRequests` table and `IdempotencyService`.
 
+## Local Development: Running PostgreSQL with Docker Compose
+
+For easy local testing, this repo provides a ready-to-go PostgreSQL database using Docker Compose.
+
+1. Start the DB:
+    ```bash
+    docker-compose up -d
+    ```
+2. Run migrations as needed.
+3. When finished:
+    ```bash
+    docker-compose down
+    ```
+
+_Default credentials are set in both `docker-compose.yml` and `appsettings.json`._
+
 ## License
 
 MIT
