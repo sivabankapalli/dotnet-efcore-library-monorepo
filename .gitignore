@@ -1,0 +1,8 @@
+bin/
+obj/
+*.user
+*.suo
+*.swp
+.vscode/
+*.DS_Store
+/.vs/dotnet-efcore-library-monorepo
